@@ -3,6 +3,4 @@
     %br
     %h6.sidebar-heading COMPONENTS
     %ul.nav.flex-column
-      %li.nav-item
-        %a.nav-link.active{:href => "#"}
-          Some Link
+      = render partial: "nav_link", collection: @components, as: :item
